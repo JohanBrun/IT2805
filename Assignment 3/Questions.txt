@@ -1,0 +1,5 @@
+Questions
+1. Position: fixed places the element in a fixed position in the viewport where it will remain unmoved.
+Position: absolute gives the element a fixed position within its parent element and will only move together with that element.
+
+2. By using the nth-child() pseudo-selector. If we want to be specific about the parent we can use: parent > child:nth-child(3).

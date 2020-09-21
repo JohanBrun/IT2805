@@ -1,0 +1,7 @@
+Questions:
+
+1. Because most mobile devices do not support videos playing behind other elements.
+2. It will do nothing because the resolution of the device is outside the conditions of the media query.
+3. Only developing one page can be time and money saving. There is no need for redirection.
+Using responsive design forces developers to use good css practices.
+Can avoid discrepancies between desktop and mobile versions of the page.

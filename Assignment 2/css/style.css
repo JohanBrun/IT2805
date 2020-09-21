@@ -1,0 +1,17 @@
+h1, h2, h3 {
+    font-family: Helvetica;
+}
+
+body {
+    background-color: darkseagreen;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman';
+}
+
+#portrait {
+    max-width: 150px;
+    border-style: solid;
+    border-width: 1px;
+}
