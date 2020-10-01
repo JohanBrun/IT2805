@@ -12,7 +12,7 @@
             <p>30/09/2020</p>
         </header>
         <div class="content-wrapper">
-        <section>
+            <section>
                 <h2 class="section-title">The Client</h2>
                 <p class="section-paragraph">
                     The client for this project is the choir group Pirum Old Boys or POB for short, represented by myself, Johan Brun.
@@ -21,9 +21,9 @@
                     Although UKA is a student festival, the singers in POB are of all ages and some have been active since the 80s.
                 </p>
             </section>
-            <figure class="img-container">
-				<img src="../img/oldboys.jpg" alt="foto.samfundet.no" class="grid-img">
-			</figure>
+            <figure class="img-container" id="oldboys-photo">
+                <img src="../img/oldboys.jpg" alt="foto.samfundet.no" class="grid-img">
+            </figure>
             <section>
                 <h2 class="section-title">Purpose, goals and audience</h2>
                 <p class="section-paragraph">
@@ -35,71 +35,183 @@
             <section>
                 <h2 class="section-title">Navigation Structure</h2>
                 <p class="section-paragraph">
-
+                    The navigation structure will be a clique structure. Any part of the webpage should be able to access all the others.
+                    This structure is chosen in order to make navigation as simple as possible, and make it very fast an simple to access content.
                 </p>
+                <figure class="img-container">
+                    <img src="../img/navstruct.png" alt="navigation structure" class="grid-img">
+                </figure>
             </section>
             <section>
                 <h2 class="section-title">Page Layout and Appearance</h2>
                 <p class="section-paragraph">
-
+                    The webpage will be designed with universal design in mind in order to make it as accessable as possible.
+                    Therefore the layout has been structured in a clear way with a navigation bar at the top of the page, content in the middle and a footer at the bottom.
+                    Colors are chosen which allow for good contrast and readability.
+                    The background color is a black which resembles the background color for POBs regular concert venue at UKA.
+                    The rest of the color scheme is made up of shades of green and a white.
+                    Green has been chosen because it has been used by POB before.
                 </p>
+                <figure class="img-container">
+                    <img src="../img/color-scheme.jpeg" alt="color scheme" class="grid-img">
+                    Color scheme found on color.adobe.com
+                </figure>
+                <p>
+                    The font used for the page will be Georgia.
+                    Another important note is that as many of the photos used in this webpage will be taken by fotogjengen at Samfundet,
+                    it is important to credit them for their photos.
+                </p>
+                </section>
+                <section id="content-section">
+                    <h2 class="section-title">Content</h2>
+                    <p class="section-paragraph">
+                        Here the content and the design of this content be shown.
+                    </p>
+                </section>
+                <figure class="img-container">
+                    <img src="../img/home.png" alt="home.html" class="grid-img">
+                </figure>
+                <section>
+                    <h3>home.html</h3>
+                    <p>
+                        The homepage is the first page the visitors arrive at.
+                        It present a group photo which takes up the entire width of the page.
+                        The footer will provide some information about who and what POB is.
+                    </p>
+                </section>
+                <section>
+                    <h3>history.html</h3>
+                    <p>
+                        The history page will attempt to give the interested reader some additional information about how POB came to be,
+                        and what POB has done througout the years.
+                        The reader will be presented with a timeline with circles along it. Each bubble represents a piece of information
+                        and if possible a photo which will be shown when the user scrolls to this bubble.
+                        In order to teach the user this behavior, the page will load right above the first bubble so that the moment the user scrolls,
+                        the bubble expands.
+                        This interactve behavior is implemented in order to make the otherwise boring activity of reading hisotry into something fun.
+                    </p>
+                </section>
+                <figure class="img-container">
+                    <img src="../img/history.png" alt="history.html" class="grid-img">
+                </figure>
+                <figure class="img-container">
+                    <img src="../img/members.png" alt="members.html" class="grid-img">
+                </figure>
+                <section>
+                    <h3>members.html</h3>
+                    <p>
+                        This page is meant to show who are current members of POB.
+                        The members will be organized in their respective voice groups and each member will have a portrait,
+                        their name and some fun and or interesting information about them. This can include the amount of times they have participated at UKA,
+                        when they joined POB or how many years they have been a part of POB.
+                    </p>
+                </section>
+                <section>
+                    <h3>gallery.html</h3>
+                    <p>
+                        The gallery is a gathering page for photos from concerts, tours and other events. 
+                        The photos will be organized in groups which can be hidden and shown by clicking the arrow next to the title of the group.
+                        The photos will be loaded in a 150px by 150px format in order to speed up load times.
+                        If the user clicks on a photo then the photo will be loaded in full size and displayed over the rest of the gallery.
+                    </p>
+                </section>
+                <figure class="img-container">
+                    <img src="../img/gallery.png" alt="gallery.html" class="grid-img">
+                </figure>
+                <figure class="img-container">
+                    <img src="../img/booking.png" alt="booking.html" class="grid-img">
+                </figure>
+                <section>
+                    <h3>booking.html</h3>
+                    <p>
+                        The booking page will simply have an image and some information about how to book POB and what someone can expect.
+                    </p>
+                </section>
+                <section>
+                    <h2 class="section-title">Minimum Requirements</h2>
+                    <p class="section-paragraph">
+                        These are the applications of JavaScript that will be used to improve the experience of the website.
+                    </p>
+                    <ol>
+                        <li>
+                            Modularity of navbar. In order to avoid repeated html code on each page, the navbar will be generated by JavaScript.
+                            This will be accomplished by adding a container element in the html with id=navbar where the navbar is supposed to by,
+                            and then adding its content in the JavaScript function.
+                        </li>
+                        <li>
+                            Animation of timeline. The timeline should be animated to react as the user scrolls down and up it.
+                            This will be accomplished by comparing the scrollposition to positions of the elements that make up the timeline,
+                            and then animating them by changing their styling with JavaScript.
+                        </li>
+                        <li>
+                            Displaying individual photos in gallery.
+                            A photo should expand and be shown in full size when the user clicks on a it in the gallery.
+                            This will be done by loading the photo and displaying it over the rest of the page.
+                        </li>
+                        <li>
+                            Hiding groups of photos.
+                            The user should be able to hide and show groups of photos by clicking the arrow next to the title of the group.
+                        </li>
+                    </ol>
             </section>
             <section>
-                <h2 class="section-title">Content</h2>
+                <h2 class="section-title">Plan</h2>
                 <p class="section-paragraph">
-
-            </p>
-        </section>
-        <section>
-            <h2 class="section-title">Minimum Requirements</h2>
-            <p class="section-paragraph">
-                These are the applications of JavaScript that will be used to improve the experience of the website.
-            </p>
-            <ol>
-                <li>
-                    Modularity of navbar. In order to avoid repeated html code on each page, the navbar will be generated by JavaScript.
-                    This will be accomplished by adding a container element in the html with id=navbar where the navbar is supposed to by,
-                    and then adding its content in the JavaScript function.
-                </li>
-                <li>
-                    Animation of timeline. The timeline should be animated to react as the user scrolls down and up it.
-                    This will be accomplished by comparing the scrollposition to positions of the elements that make up the timeline,
-                    and then animating them by changing their styling with JavaScript.
-                </li>
-            </ol>
-        </section>
-        <section>
-            <h2 class="section-title">Plan</h2>
-            <p class="section-paragraph">
-                The following list will show the organization of files and folders that will make up the webpage.
-            </p>
-            <ul>
-                <li>home.html</li>
-                <li>history.html</li>
-                <li>members.html</li>
-                <li>gallery.html</li>
-                <li>booking.html</li>
-                <li>images/</li>
+                    The following list will show the organization of files and folders that will make up the webpage.
+                </p>
                 <ul>
-                    <li>home-cover.png</li>
-                    <li>booking-cover.png</li>
-                    <li>history/</li>
+                    <li>home.html</li>
+                    <li>history.html</li>
+                    <li>members.html</li>
+                    <li>gallery.html</li>
+                    <li>booking.html</li>
+                    <li>images/</li>
                     <ul>
-                        <li>historic-photo-1.png</li>
-                        <li>historic-photo-2.png</li>
-                        <li>...</li>
-                        <li>historic-photo-10.png</li>
+                        <li>home-cover.png</li>
+                        <li>booking-cover.png</li>
+                        <li>history/</li>
+                        <ul>
+                            <li>historic-photo-1.png</li>
+                            <li>historic-photo-2.png</li>
+                            <li>...</li>
+                            <li>historic-photo-10.png</li>
+                        </ul>
+                        <li>portraits/</li>
+                        <ul>
+                            <li>portait-1.png</li>
+                            <li>portrait-2.png</li>
+                            <li>...</li>
+                            <li>portrait-20.png</li>
+                        </ul>
+                        <li>gallery-uka-19</li>
+                        <ul>
+                            <li>uka-19-1.png</li>
+                            <li>uka-19-2.png</li>
+                            <li>...</li>
+                            <li>uka-19-21.png</li>
+                        </ul>
+                        <li>gallery-uka-17</li>
+                        <ul>
+                            <li>uka-17-1.png</li>
+                            <li>uka-17-2.png</li>
+                            <li>...</li>
+                            <li>uka-17-19.png</li>
+                        </ul>
                     </ul>
-                    <li>portraits/</li>
+                    <li>css/</li>
                     <ul>
-                        <li>portait-1.png</li>
-                        <li>portrait-2.png</li>
-                        <li>...</li>
-                        <li>portrait-20.png</li>
+                        <li>style.css</li>
                     </ul>
                 </ul>
-            </ul>
-        </section>
+                <h3>Deadlines and workflow</h3>
+                <ul>
+                    <li>08/10/2020 - Skeleton for all pages with linking and homepage</li>
+                    <li>15/10/2020 - Booking page and members</li>
+                    <li>22/10/2020 - Gallery</li>
+                    <li>29/10/2020 - History</li>
+                    <li>05/11/2020 - Testing and bugfixes</li>
+                </ul>
+            </section>
         </div>
     </body>
 </html>
