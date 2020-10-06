@@ -1,0 +1,22 @@
+<!DOCTYPE xml>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE hero [
+    <!ELEMENT hero (real-name, gender, email, birthdate, hero-name, spandex, strength, speed, intelligence, income, wealth, tax)>
+]>
+
+<heros>
+    <hero>
+        <real-name></real-name>
+        <gender></gender>
+        <email></email>
+        <birthdate><birthdate>
+        <hero-name></hero-name>
+        <spandex></spandex>
+        <strength></strength>
+        <speed></speed>
+        <intelligence></intelligence>
+        <income></income>
+        <wealth></wealth>
+        <tax></tax>
+    </hero>
+</heros>

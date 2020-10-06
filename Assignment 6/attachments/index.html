@@ -10,30 +10,65 @@
         <h1>Hero tax</h1>
         <h3>Personalia, please submit</h3>
         <form action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="post">
-            <label for="rname">Real name</label>
-            <input id="rname" type="text" name="rname"><br>
-            <input id="male" type="radio" name="gender" value="male">
-            <label for="male">Male</label>
-            <input id="female" type="radio" name="gender" value="female">
-            <label for="female">Female</label><br>
-            <label for="email">E-mail</label>
-            <input id="email" type="email" name="email"><br>
-            <label for="birthdate">Birthdate</label>
-            <input id="birthdate" type="date" name="birthdate"><br>
-            <label for="hname">Hero name</label>
-            <input id="hname" type="text" name="hname"><br>
-            <label for="spandex">Do you wear spandex?</label><br>
-            <label for="yes">Yes</label>
-            <input id="yes" type="radio" name="spandex" value="True">
-            <label for="no">No</label>
-            <input id="no" type="radio" name="spandex" value="False"><br>
-            <label for="strength">Strength</label>
-            <input id="strength" type="range" min="1" max="10" name="strength"><br>
-            <label for="speed">Speed</label>
-            <input id="speed" type="range" min="1" max="10" name="speed"><br>
-            <label for="intelligence">Intelligence</label>
-            <input id="intelligence" type="range" min="1" max="10" name="intelligence"><br>
+            <div class="form-field name">
+                <label for="rname">Real name</label>
+                <input id="rname" type="text" name="rname" required>
+            </div>
+            <div class="form-field gender">
+                <input id="male" type="radio" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input id="female" type="radio" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div class="form-field email">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="email" required>
+            </div>
+            <div class="form-field birthdate">
+                <label for="birthdate">Birthdate</label>
+                <input id="birthdate" type="date" name="birthdate" max="1988-01-01" required>
+            </div>
+            <div class="form-field name">
+                <label for="hname">Hero name</label>
+                <input id="hname" type="text" name="hname" required>
+            </div>
+            <div class="form-field spandex">
+                <h3 id="spandex-title">Do you wear spandex?</h3>
+                <input id="yes" type="radio" name="spandex" value="True" required>
+                <label for="yes">Yes</label>
+                <input id="no" type="radio" name="spandex" value="False">
+                <label for="no">No</label>
+            </div>
+            <div class="form-field level">
+                <label for="strength">Strength</label>
+                <input id="strength-range" type="range" min="1" max="10" name="strength" onchange="updateTextInput(this.value, 'strength');">
+                <input id="strength" type="number" min="1" max="10" name="strength" onchange="updateRangeInput(this.value, 'strength-range');" required>
+            </div>
+            <div class="form-field level">
+                <label for="speed">Speed</label>
+                <input id="speed-range" type="range" min="1" max="10" name="speed" onchange="updateTextInput(this.value, 'speed');">
+                <input id="speed" type="number" min="1" max="10" name="speed" onchange="updateRangeInput(this.value, 'speed-range');" required>
+            </div>
+            <div class="form-field level">
+                <label for="intelligence">Intelligence</label>
+                <input id="intelligence-range" type="range" min="1" max="10" name="intelligence" onchange="updateTextInput(this.value, 'intelligence');">
+                <input id="intelligence" type="number" min="1" max="10" name="intelligence" onchange="updateRangeInput(this.value, 'intelligence-range');" required>
+            </div>
+            <div class="form-field calculation">
+                <label for="income">Income</label>
+                <input id="income" type="number" min="0" name="income" onchange="calcTax();" required>
+            </div>
+            <div class="form-field calculation">
+                <label for="wealth">Wealth</label>
+                <input id="wealth" type="number" min="0" name="wealth" onchange="calcTax();" required>
+            </div>
+            <div class="form-field calculation">
+                <label for="tax">Tax</label>
+                <input id="tax" type="number" name="tax" value="0" disabled>
+            </div>
             <input type="submit" value="Submit">
         </form>
+
+        <script src="script.js"></script>
     </body>
 </html>
