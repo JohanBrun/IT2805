@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #FFF;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header {
@@ -40,6 +41,15 @@ h3 {
 
 .img-container {
   align-self: end;
+  text-align: center;
+}
+
+#oldboys-photo {
+  grid-row: 1 / span 2
+}
+
+#content-section {
+  grid-column: 1 / span 2;
 }
 
 a:link {
