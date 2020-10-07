@@ -16,3 +16,7 @@ calcTax = () => {
     const wealth = document.getElementById('wealth').value;
     document.getElementById('tax').value = 0.35 * income + 0.25 * wealth;
 }
+
+let x = 0.1 + 0.2;
+console.log(x)
+console.log(x == 0.3);

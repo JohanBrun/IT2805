@@ -1,22 +1,47 @@
 <!DOCTYPE xml>
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE hero [
-    <!ELEMENT hero (real-name, gender, email, birthdate, hero-name, spandex, strength, speed, intelligence, income, wealth, tax)>
-]>
 
 <heros>
     <hero>
-        <real-name></real-name>
-        <gender></gender>
-        <email></email>
-        <birthdate><birthdate>
-        <hero-name></hero-name>
-        <spandex></spandex>
-        <strength></strength>
-        <speed></speed>
-        <intelligence></intelligence>
-        <income></income>
-        <wealth></wealth>
-        <tax></tax>
+        <real-name>Nick Nedd</real-name>
+        <gender>Male</gender>
+        <email>nick@tick.com</email>
+        <birthdate>1976<birthdate>
+        <hero-name>The Tick</hero-name>
+        <spandex>True</spandex>
+        <strength>9</strength>
+        <speed>7</speed>
+        <intelligence>5</intelligence>
+        <income>90287</income>
+        <wealth>0</wealth>
+        <tax>29794</tax>
+    </hero>
+    <hero>
+        <real-name>Bruce Wayne</real-name>
+        <gender>Male</gender>
+        <email>bruce@wayneenterprises.com</email>
+        <birthdate>1974<birthdate>
+        <hero-name>Batman</hero-name>
+        <spandex>False</spandex>
+        <strength>7</strength>
+        <speed>4</speed>
+        <intelligence>9</intelligence>
+        <income>3343891</income>
+        <wealth>50144501</wealth>
+        <tax>11132384</tax>
+    </hero>
+    <hero>
+        <real-name>Selina Kyle</real-name>
+        <gender>Female</gender>
+        <email>selina@whiskas.com</email>
+        <birthdate>1977<birthdate>
+        <hero-name>Catwoman</hero-name>
+        <spandex>True</spandex>
+        <strength>6</strength>
+        <speed>6</speed>
+        <intelligence>9</intelligence>
+        <income>0</income>
+        <wealth>2987323</wealth>
+        <tax>597464</tax>
     </hero>
 </heros>
