@@ -1,0 +1,8 @@
+1. To get a 3d context we call getContext('webgl)
+
+2. We can draw a circle using the canvas-function arc(xCenter, yCenter, radius, startAngle, endAngle)
+and entering 0 for startAngle and Math.PI * 2 for endAngle (as well as any valid values for the other arguments).
+
+3.
+const countries = ['Norway', 'Sweden', 'Denmark', 'New Zealand'];
+const countriesStartingWithN = countries.filter(country => country.startsWith('N'));
