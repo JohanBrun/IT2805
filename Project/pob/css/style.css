@@ -4,17 +4,16 @@ body {
     background-color: #0D0D0D;
 }
 
-header {
+h1 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+nav {
     height: 10vh;
     width: 100vw;
     max-height: 200px;
     background-color: #403C28;
     color: #F2F0E4;
-}
-
-nav {
-  width: 100vw;
-  height: 100%;
 }
 
 #logo-placeholder {
@@ -28,16 +27,34 @@ nav {
 .link-list {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .link-list > li {
   list-style-type: none;
+  flex-grow: 1;
+  height: 100%;
+}
+
+li.active {
+  background-color: #736A3C;
+}
+
+.link-title {
+  display: flex;
+  height: 100%;
+  margin: 0 0;
+  justify-content: center;
+  align-items: center;
 }
 
 a:link {
   color: #F2F0E4;
+  text-decoration: none;
 }
 
 a:hover {
@@ -46,4 +63,22 @@ a:hover {
 
 a:visited {
   color:#F2F0E4;
+}
+
+.fullpage-cover {
+  width: 100vw;
+}
+
+#cover-container {
+  color: #F2F0E4;
+  position: relative;
+}
+
+#cover-container > h1 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 4rem;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -50%);
 }
