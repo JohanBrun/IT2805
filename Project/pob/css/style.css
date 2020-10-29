@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #0D0D0D;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -81,4 +82,65 @@ a:visited {
   left: 50%;
   top: 5%;
   transform: translate(-50%, -50%);
+}
+
+#booking-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 90vh;
+}
+
+#booking-cover {
+  flex-grow: 1;
+  max-width: 50vw;
+}
+
+#booking-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: #F2F0E4;
+  background-color: #594D2A;
+  text-align: center;
+  height: 100%;
+  flex-grow: 1;
+  padding: 0 10%;
+}
+
+#members-content {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+  width: 100vw;
+}
+
+#conductor, #tenor1, #tenor2, #bass1, #bass2 {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: space-around;
+  gap: 5px;
+
+  color: #F2F0E4;
+  
+  height: fit-content;
+  background-color: #594D2A
+}
+
+.voice-group {
+  width: 100%;
+}
+
+.member-name {
+  margin: 5px;
+}
+
+.portrait {
+  height: 150px;
 }
