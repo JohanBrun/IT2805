@@ -3,6 +3,7 @@ body {
     padding: 0;
     background-color: #0D0D0D;
     overflow-x: hidden;
+    color: #F2F0E4;
 }
 
 h1 {
@@ -80,6 +81,14 @@ a:visited {
   transform: translate(-50%, -50%);
 }
 
+#home-info {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 20vh;
+  background-color: #594D2A;
+}
+
 /* Booking */
 
 #booking-content {
@@ -146,5 +155,23 @@ a:visited {
   height: 150px;
 }
 
-/* History */
+/* Gallery */
 
+.collapsable-gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 95vw;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.fullscale-img {
+  height: 90vh;
+}
+
+#UKA-19 {
+  text-align: center;
+}
+
+/* History */
