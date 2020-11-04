@@ -7,11 +7,28 @@ const canvasWidth = canvas.offsetWidth;
 const canvasHeight = canvas.offsetHeight;
 const midtPoint = canvasWidth / 2;
 
+// To be expanded
+pobHistory = [
+  {
+    year: '1977',
+    info: 'Pirum Old Boys blir etablert'
+    // Could also include a image url for showing relevant image.
+  }
+];
+
 drawLine = (x, y, width, height) => {
   context.beginPath();
   context.rect(x, y, width, height)
   context.fillStyle = '#F2F0E4';
   context.fill();
+}
+
+drawText = (text, x, y) => {
+  context.font = '20px Palatino Linotype'
+  context.fillStyle = '#F2F0E4';
+  context.textAlign = 'center';
+  context.fillText(text.year, x, y - 20);
+  context.fillText(text.info, x, y)
 }
 
 drawCircle = (cx, cy, r) => {
@@ -34,6 +51,7 @@ drawEllipse = (cx, cy, rx, ry) => {
   context.fill();
 }
 
+// Returns true if the scroll position is close to where the bubble is drawn
 checkScrollPosition = (vertPosition) => {
   return vertPosition >= document.documentElement.scrollTop + 350 && vertPosition <= document.documentElement.scrollTop + 450
 }
@@ -47,7 +65,9 @@ renderTimeline = () => {
   while (vertPosition < canvasHeight - 200) {
     drawLine(midtPoint, vertPosition, 50 * i, 6);
     if (checkScrollPosition(vertPosition)) {
-      drawEllipse(midtPoint + 350 * i, vertPosition + 3, 300, 150);
+      const ellipseR = canvasWidth / 5;
+      drawEllipse(midtPoint + (ellipseR + 50) * i, vertPosition + 3, ellipseR, ellipseR / 1.68);
+      drawText(pobHistory[0], midtPoint + (ellipseR + 50) * i, vertPosition +3)
     } else {
       drawCircle(canvasWidth / 2 + 80 * i, vertPosition + 3, 30);
     }
@@ -56,8 +76,10 @@ renderTimeline = () => {
   }
 }
 
+// Drawing before the user has started scrolling
 renderTimeline();
 
+// Callback on scrolling event
 window.onscroll = () => {
   renderTimeline();
 }

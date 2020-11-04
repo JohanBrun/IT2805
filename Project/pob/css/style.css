@@ -24,7 +24,6 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -83,10 +82,18 @@ a:visited {
 
 #home-info {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
+  box-sizing: border-box;
   width: 100vw;
   height: 20vh;
-  background-color: #594D2A;
+  background-color: #0D0D0D;
+  padding: 30px;
+}
+
+#home-info > p {
+  max-width: 40vw;
 }
 
 /* Booking */
@@ -110,11 +117,15 @@ a:visited {
   align-items: center;
   box-sizing: border-box;
   color: #F2F0E4;
-  background-color: #594D2A;
+  background-color: #0D0D0D;
   text-align: center;
   height: 100%;
   flex-grow: 1;
   padding: 0 10%;
+}
+
+#booking-info > ul > li {
+  list-style-type: none;
 }
 
 /* Members */
@@ -144,7 +155,9 @@ a:visited {
 
 .voice-group {
   width: 100%;
-  margin: 10px;
+  margin: 0;
+  padding: 10px;
+  background-color: #0D0D0D;
 }
 
 .member-name {

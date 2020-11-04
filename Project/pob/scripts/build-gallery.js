@@ -7,13 +7,7 @@ photoContainer.setAttribute('class', 'collapsable-gallery');
 
 showFullscale = (img) => {
   console.log('image clicked');
-  bigImg = new Image();
-  console.log(img)
-  /*
-  bigImg.src = url;
-  bigImg.class = 'fullscale-img';
-  document.getElementById('gallery-content').appendChild(bigImg);
-  */
+  // This is where showing a fullscale image is to be implemented.
 }
 
 let img;
