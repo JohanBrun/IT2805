@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Project delivery P3</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<header>
+			<h1>Pirum Old Boys</h1>
+			<h3>Written by Johan Brun</h3>
+			<p>04/11/2020</p>
+		</header>
+		<div class="content-wrapper">
+			<section>
+				<h2 class="section-title">The Client</h2>
+				<p class="section-paragraph">
+						The client for this project is the choir group Pirum Old Boys or POB for short, represented by myself, Johan Brun.
+						POB is a choir group established in 1977 and its members are mostly former members of the choir group UKEkoret Pirum.
+						The choir usually performs around six concerts during the student organized festival UKA.
+						Although UKA is a student festival, the singers in POB are of all ages and some have been active since the 80s.
+				</p>
+			</section>
+			<figure class="img-container">
+				<img src="../img/oldboys.jpg" alt="foto.samfundet.no" class="grid-img">
+			</figure>
+			<section class="span-both-cols">
+        <a href="http://folk.ntnu.no/johabru/Project/pob/home.html" target="_blank"><h1>Link to start page</h1></a>
+      </section>
+      <section class="span-two-rows">
+        <h2 class="section-title">Design changes</h2>
+        A general change for the entire design is the font used which now is Palatino Linotype due to it matching the aestetic of the page better.
+        In addition a common footer for every page has not yet been implemented which is why it is not seen on the pages.
+        <h3>Navbar</h3>
+        <p>
+          As a good png option for the logo was not found, the logo was not included this time. Otherwise the font, and font size were changes for aestetics.
+        </p>
+        <h3>home.html</h3>
+        <p>
+          The home/start page follows its general design fairly closely.
+          The photo used for the cover is changed into one that leaves more space for the title (not overlapping with backlights)
+          which gives better readability.
+          The background color for the information section below the cover had been changed to be the off-black background-color #0D0D0D
+          for both better readability and sleeker design.
+        </p>
+        <h3>history.html</h3>
+        <p>
+          The history page has so far been implemented according to its design,
+          except the expanded bubbles which now have a greater horizontal radius.
+        </p>
+        <h3>members.html</h3>
+        <p>
+          The orginization of the voice groups where changed from columns to rows because it made for better responsive design
+          and left less empty space on the page. Otherwise the general concept is the same, although photos of every member and
+          information about them is still missing.
+        </p>
+        <h3>gallery.html</h3>
+        <p>
+          The original 150x150 pixel resolution was discared in favor of every photo having 200px height and width according to their original shape.
+          The height was increased to 200px to make the photos easier to see.
+          The title was placed at the center of the page due to the gallery not having collapsable sections yet.
+        </p>
+        <h3>booking.html</h3>
+        <p>
+          The booking page was implemented according to its layout, but the background-color for the text was replaced with the off-black for better readability and aestetic.
+          The text was also centered vertically on the page.
+        </p>
+      </section>
+      <section>
+        <h2 class="section-title">Minimum requirements</h2>
+				<p class="section-paragraph">
+          As this was a one man project, all minimum requirements were implemented by Johan.
+          The minimum requirements where fulfilled by implementing the rendering and animation of the timeline in HTML5 canvas,
+          as well as dynamically generating the member and gallery photos through javascript.
+				</p>
+      </section>
+      <section>
+        <h2 class="section-title">Modularity</h2>
+				<p class="section-paragraph">
+          Again all modularity was implemented by Johan. In this project the navbar was made modular through javascript.
+          The CSS code was also modular as the web page had one common stylesheet.
+				</p>
+      </section>
+      <section>
+        <h2 class="section-title">Updated organization of files and folders</h2>
+        <p class="section-paragraph">
+          The following list is the file and folder structure at the time of writing this document.
+        </p>
+        <ul>
+          <li>css/</li>
+          <ul>
+            <li>style.css</li>
+          </ul>
+          <li>images/</li>
+          <ul>
+            <li>portraits/</li>
+            <ul>
+              <li>nasse.jpg</li>
+              <li>brun.jpg</li>
+            </ul>
+            <li>UKA-19-comp</li>
+            <ul>
+              <li>UKA-19-1.jpg</li>
+              <li>UKA-19-2.jpg</li>
+              <li>...</li>
+              <li>UKA-19-25.jpg</li>
+            </ul>
+            <li>home-cover.png</li>
+            <li>booking-cover.png</li>
+          </ul>
+          <li>home.html</li>
+          <li>history.html</li>
+          <li>members.html</li>
+          <li>gallery.html</li>
+          <li>booking.html</li>
+        </ul>
+      </section>
+		</div>
+		<footer>
+			<div class="footer-box"></div>
+		</footer>
+	</body>
+</html>
